@@ -46,7 +46,7 @@ int sumAllSubmatrix2(int mat[10][10],int preMat[10][10], int r, int c){
 					if(ti>0){
 						subSum -= preMat[ti-1][bj];
 					}
-					//remove sum of (0,0) to (ti,bj)
+					//remove sum of (0,0) to (bi,tj-1)
 					if(tj>0){
 						subSum -= preMat[bi][tj-1];
 					}
@@ -86,5 +86,6 @@ int main(int argc, char const *argv[])
 	}
 	prefixSum(preMat,mat, r, c);
 	cout<<sumAllSubmatrix2(mat,preMat, r, c)<<endl;
+	
 	return 0;
 }

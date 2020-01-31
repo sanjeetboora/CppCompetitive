@@ -17,16 +17,14 @@ int sumAllSubmatrix1(int mat[10][10], int r, int c){
 						{
 							sum += mat[i][j];
 						}
-					}
-					
+					}		
 				}
 			}
 		}
 	}
-
 	return sum;
-
 }
+
 int main(int argc, char const *argv[])
 {
 	int r, c;

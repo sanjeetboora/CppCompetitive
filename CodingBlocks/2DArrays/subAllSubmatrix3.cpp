@@ -11,7 +11,7 @@ int sumAllSubmatrix3(int mat[10][10], int r, int c) {
 			int topLeft = (i + 1) * (j + 1);
 			// ways to choose bottom right
 			int bottomRight = (r - i) * (c - j);
-
+			//contribution of every cell
 			sum += (topLeft * bottomRight * mat[i][j]);
 		}
 	}
