@@ -1,5 +1,22 @@
 #include<iostream>
 using namespace std;
+void generateMatrix(int mat[10][10], int r, int c){
+	for (int i = 0; i < r; ++i)
+	{
+		for (int j = 0; j < c; j++) {
+			mat[i][j] = (i * 10) + (j + 1);
+		}
+	}
+}
+void printMatrix(int mat[10][10], int r, int c){
+	for (int i = 0; i < r; ++i)
+	{
+		for (int j = 0; j < c; j++) {
+			cout << mat[i][j] << ", ";
+		}
+		cout << endl;
+	}
+}
 
 void prefixSum(int preMat[10][10],int mat[10][10], int r, int c){
 	for (int i = 0; i < c; ++i){
@@ -70,22 +87,12 @@ int main(int argc, char const *argv[])
 	cin >> r >> c;
 	int mat[10][10];
 	int preMat[10][10];
-	for (int i = 0; i < r; ++i)
-	{
-		for (int j = 0; j < c; j++) {
-			mat[i][j] = (i * 10) + (j + 1);
-		}
-	}
+	
+	generateMatrix(mat, r, c);
+	printMatrix(mat, r, c);
 
-	for (int i = 0; i < r; ++i)
-	{
-		for (int j = 0; j < c; j++) {
-			cout << mat[i][j] << ", ";
-		}
-		cout << endl;
-	}
 	prefixSum(preMat,mat, r, c);
 	cout<<sumAllSubmatrix2(mat,preMat, r, c)<<endl;
-	
+
 	return 0;
 }

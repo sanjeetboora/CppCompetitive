@@ -1,5 +1,23 @@
 #include<iostream>
 using namespace std;
+void generateMatrix(int mat[10][10], int r, int c){
+	for (int i = 0; i < r; ++i)
+	{
+		for (int j = 0; j < c; j++) {
+			mat[i][j] = (i * 10) + (j + 1);
+		}
+	}
+}
+void printMatrix(int mat[10][10], int r, int c){
+	for (int i = 0; i < r; ++i)
+	{
+		for (int j = 0; j < c; j++) {
+			cout << mat[i][j] << ", ";
+		}
+		cout << endl;
+	}
+}
+
 int sumAllSubmatrix1(int mat[10][10], int r, int c){
 	int sum =0;
 	// top left
@@ -30,21 +48,8 @@ int main(int argc, char const *argv[])
 	int r, c;
 	cin >> r >> c;
 	int mat[10][10];
-	for (int i = 0; i < r; ++i)
-	{
-		for (int j = 0; j < c; j++) {
-			mat[i][j] = (i * 10) + (j + 1);
-		}
-	}
-
-	for (int i = 0; i < r; ++i)
-	{
-		for (int j = 0; j < c; j++) {
-			cout << mat[i][j] << ", ";
-		}
-		cout << endl;
-	}
-
+	generateMatrix(mat, r, c);
+	printMatrix(mat, r, c);
 	cout<<sumAllSubmatrix1(mat, r, c)<<endl;
 	return 0;
 }
