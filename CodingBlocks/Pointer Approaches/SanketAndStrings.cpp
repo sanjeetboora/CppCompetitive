@@ -16,16 +16,16 @@ int main(int argc, char const *argv[])
 	{
 		count[str[i] - 'a']++;
 
-		if(min(count[0],count[1])>k){
+		if (min(count[0], count[1]) > k) {
 			count[str[left] - 'a']--;
 			left++;
 		}
-		else{
+		else {
 			result++;
 		}
 
 	}
-	cout<<result<<endl;
+	cout << result << endl;
 
 
 	return 0;
