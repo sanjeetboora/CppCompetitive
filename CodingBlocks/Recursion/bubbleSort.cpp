@@ -15,12 +15,13 @@ void bubbleSort1(int* arr, int n) {
 
 }
 void bubbleSort2(int* arr, int n, int i) {
-	if (n == 1) {
+
+	if (n == 0) {
 		return;
 	}
+
 	if (i == n - 1) {
-		bubbleSort2(arr, n - 1, 0);
-		return;
+		return bubbleSort2(arr, n - 1, 0);
 	}
 
 	if (arr[i] > arr[i + 1]) {
