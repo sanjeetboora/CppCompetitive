@@ -14,7 +14,6 @@ public:
 		int aMaxCount = lenA;
 
 		while (aMinCount <= aMaxCount) {
-
 			int aCount = aMinCount + ((aMaxCount - aMinCount) / 2);
 			int bCount = mid - aCount;
 			int maxLeftA = aCount == 0 ? -2147483648 : nums1[aCount - 1] ;
