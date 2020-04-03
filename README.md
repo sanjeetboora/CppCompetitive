@@ -15,5 +15,6 @@
 * [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/RemoveDuplicatesFromSortedList.cpp)
 * [Partition List](https://leetcode.com/problems/partition-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/PartitionList.cpp)
 * [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/ReverseLinkedListII.cpp)
-
+* [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/CopyListwithRandomPointer.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/CopyListwithRandomPointer2.cpp)
+* [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/LinkedListCycle.cpp)
 
