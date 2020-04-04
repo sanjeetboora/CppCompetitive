@@ -23,6 +23,10 @@
 * [Sort List](https://leetcode.com/problems/sort-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/SortList.cpp)
 * [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/IntersectionofTwoLinkedLists.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/IntersectionofTwoLinkedLists2.cpp)
 * [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/RemoveLinkedListElements.cpp)
+* [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/ReverseLinkedList.cpp)
+* [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/PalindromeLinkedList.cpp)
+
+
 
 
 
