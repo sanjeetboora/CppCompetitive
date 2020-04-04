@@ -18,7 +18,14 @@
 * [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/CopyListwithRandomPointer.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/CopyListwithRandomPointer2.cpp)
 * [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/LinkedListCycle.cpp)
 * [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/LinkedListCycleII.cpp)
-* [ReorderList](https://leetcode.com/problems/reorder-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/ReorderList.cpp)
+* [Reorder List](https://leetcode.com/problems/reorder-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/ReorderList.cpp)
+* [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/InsertionSortList.cpp)
+* [Sort List](https://leetcode.com/problems/sort-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/SortList.cpp)
+* [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/IntersectionofTwoLinkedLists.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/IntersectionofTwoLinkedLists2.cpp)
+* [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/RemoveLinkedListElements.cpp)
+
+
+
 
 
 
