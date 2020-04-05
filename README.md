@@ -26,6 +26,7 @@
 * [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/ReverseLinkedList.cpp)
 * [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/PalindromeLinkedList.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/PalindromeLinkedList2.cpp)
 * [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/DeleteNodeinaLinkedList.cpp)
+* [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/OddEvenLinkedList.cpp)
 
 
 
