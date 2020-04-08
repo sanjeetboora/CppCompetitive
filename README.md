@@ -29,6 +29,14 @@
 * [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/LinkedList/OddEvenLinkedList.cpp)
 
 
+### Tree
+* [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/BinaryTreeInorderTraversal.cpp)
+* [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/UniqueBinarySearchTrees.cpp)
+* [Same Tree](https://leetcode.com/problems/same-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SameTree.cpp)
+* [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SymmetricTree.cpp)
+
+
+
 
 
 
