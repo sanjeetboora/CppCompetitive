@@ -85,7 +85,6 @@ void levelOrderWithNextLine(node* root) {
 		}
 		q.pop();
 	}
-
 }
 
 node* deleteInBst(node* root, int d) {
@@ -131,8 +130,6 @@ node* deleteInBst(node* root, int d) {
 	return root;
 }
 
-
-
 node* min(node* root) {
 	if (root == NULL) {
 		return root;
@@ -141,7 +138,6 @@ node* min(node* root) {
 		return root;
 	}
 	return min(root->left);
-
 }
 
 node* max(node* root) {
@@ -222,10 +218,39 @@ LinkedList flattenBT(node* root) {
 		l.tail = temp2.tail;
 		return l;
 	}
-
-
 }
 
+node* InorderSuccessor(node* root, int d) {
+	node* target = search(root, d);
+
+	if (target == NULL) {
+		return NULL;
+	}
+	else {
+		if (target->right != NULL) {
+			node* temp = target->right;
+			while (temp->left) {
+				temp = temp->left;
+			}
+			return temp;
+		}
+		else {
+			node* ancestor = NULL;
+			node* successor = root;
+			while (successor!=target) {
+				if(successor->data > target->data){
+					ancestor = successor;
+					successor = successor->left;
+					
+				}
+				else{
+					successor = successor->right;
+				}
+			}
+			return ancestor;
+		}
+	}
+}
 
 
 int main(int argc, char const *argv[])
@@ -271,14 +296,14 @@ int main(int argc, char const *argv[])
 	//root = deleteInBst(root, 20);
 	//levelOrderWithNextLine(root);
 
-	LinkedList ll = flattenBT(root);
-	node* l = ll.head;
-	while (l) {
-		cout << l->data << ", ";
-		l = l->right;
-	}
-
-	cout << endl;
+	// LinkedList ll = flattenBT(root);
+	// node* l = ll.head;
+	// while (l) {
+	// 	cout << l->data << ", ";
+	// 	l = l->right;
+	// }
+	node* successor = InorderSuccessor(root, 9);
+	cout <<successor->data<< endl;
 
 	return 0;
 }
