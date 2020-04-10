@@ -237,19 +237,55 @@ node* InorderSuccessor(node* root, int d) {
 		else {
 			node* ancestor = NULL;
 			node* successor = root;
-			while (successor!=target) {
-				if(successor->data > target->data){
+			while (successor != target) {
+				if (successor->data > target->data) {
 					ancestor = successor;
 					successor = successor->left;
-					
+
 				}
-				else{
+				else {
 					successor = successor->right;
 				}
 			}
 			return ancestor;
 		}
 	}
+}
+
+class nodeHelper {
+public:
+	int isBST;
+	int maximum;
+	int minimum;
+	int size;
+	nodeHelper() {
+		isBST  = true;
+		maximum = INT_MIN;
+		minimum = INT_MAX;
+		size = 0;
+	}
+
+};
+
+nodeHelper largestBSTinBT(node*root) {
+	if (root == NULL) {
+		return nodeHelper();
+	}
+
+	nodeHelper leftTree = largestBSTinBT(root->left);
+	nodeHelper rightTree = largestBSTinBT(root->right);
+	nodeHelper sol;
+	if (leftTree.maximum <= root->data and rightTree.minimum > root->data and leftTree.isBST and rightTree.isBST) {
+		sol.isBST = true;
+		sol.maximum = max(rightTree.maximum,root->data);
+		sol.minimum = min(leftTree.minimum,root->data);
+		sol.size = leftTree.size + rightTree.size + 1;
+	}
+	else {
+		sol.isBST = false;
+		sol.size = max(leftTree.size, rightTree.size);
+	}
+	return sol;
 }
 
 
@@ -282,8 +318,8 @@ int main(int argc, char const *argv[])
 	// } else {
 	// 	cout << "tree is empty" << endl;
 	// }
-	//root = buildBinaryTree(); //10 3 1 -1 -1 4 -1 -1 15 12 -1 -1 16 -1 -1
-	root = buildBST();
+	root = buildBinaryTree(); //10 3 1 -1 -1 4 -1 -1 15 12 -1 -1 16 -1 -1
+	//root = buildBST();
 	//print(root);
 	levelOrderWithNextLine(root);
 	cout << endl;
@@ -302,8 +338,10 @@ int main(int argc, char const *argv[])
 	// 	cout << l->data << ", ";
 	// 	l = l->right;
 	// }
-	node* successor = InorderSuccessor(root, 9);
-	cout <<successor->data<< endl;
+	// node* successor = InorderSuccessor(root, 9);
+	// cout <<successor->data<< endl;
+	cout << largestBSTinBT(root).size << endl;
+
 
 	return 0;
 }
