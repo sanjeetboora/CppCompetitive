@@ -34,6 +34,7 @@
 * [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/UniqueBinarySearchTrees.cpp)
 * [Same Tree](https://leetcode.com/problems/same-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SameTree.cpp)
 * [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SymmetricTree.cpp)
+* [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/RecoverBinarySearchTree.cpp)
 
 
 
