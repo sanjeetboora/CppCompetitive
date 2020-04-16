@@ -37,6 +37,14 @@
 * [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/RecoverBinarySearchTree.cpp)
 
 
+### Heap / Priority Queue
+* [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/MergekSortedLists.cpp)
+* [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/KthLargestElementinanArray.cpp)
+* [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SlidingWindowMaximum.cpp)
+
+
+
+
 
 
 
