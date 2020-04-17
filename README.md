@@ -43,8 +43,7 @@
 * [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/SlidingWindowMaximum.cpp)
 * [Meeting Rooms II](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution1](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/MeetingRoomsII.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/TwoPoniter/MeetingRoomsII2.cpp)
 * [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) -> [Solution1](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/UglyNumberII2.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UglyNumberII2.cpp)
-
-
+* [Find Median from Data Stream](https://leetcode.com/problems/ugly-number-ii/) -> [Solution1](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/FindMedianfromDataStream.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/FindMedianfromDataStream2.cpp)
 
 
 
