@@ -38,10 +38,11 @@
 
 
 ### Heap / Priority Queue
-* [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/MergekSortedLists.cpp)
-* [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/KthLargestElementinanArray.cpp)
-* [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/blob/master/Leetcode/Trees/SlidingWindowMaximum.cpp)
-
+* [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/MergekSortedLists.cpp)
+* [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/KthLargestElementinanArray.cpp)
+* [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/SlidingWindowMaximum.cpp)
+* [Meeting Rooms II](https://leetcode.com/problems/sliding-window-maximum/) -> [Solution1](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/MeetingRoomsII.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/TwoPoniter/MeetingRoomsII2.cpp)
+* [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) -> [Solution1](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Heap/UglyNumberII2.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UglyNumberII2.cpp)
 
 
 
