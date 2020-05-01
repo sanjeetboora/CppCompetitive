@@ -6,11 +6,9 @@ public:
 	char data;
 	unordered_map<char, node*> children;
 	bool isTerminal;
-	int visited;
 	node(char ch) {
 		data = ch;
 		isTerminal = false;
-		visited  = 0;
 	}
 
 };
@@ -22,6 +20,8 @@ public:
 	trie() {
 		root = new node('\0');
 	}
+
+
 	void insert(string word) {
 		node* temp = root;
 		for (int i = 0; i < word.length(); ++i)
@@ -31,28 +31,23 @@ public:
 				temp->children[word[i]] = child;
 			}
 			temp = temp->children[word[i]];
-			temp->visited = temp->visited + 1;
 		}
 		temp->isTerminal = true;
 	}
-	void uniquePrefixes(node* currNode, string prefix) {
-		if (currNode == NULL) {
-			return;
-		}
 
-		if (currNode->visited  == 1) {
-			cout << prefix << endl;
-			return;
+	bool search(string word) {
+		node* temp = root;
+		for (int i = 0; i < word.length(); ++i)
+		{
+			if (!temp->children.count(word[i])) {
+				return false;
+			}
+			temp = temp->children[word[i]];
 		}
-		for (auto x : currNode->children)
-		{	char ch = x.first;
-			uniquePrefixes(x.second, prefix + ch);
-		}
-
+		return temp->isTerminal;
 	}
 
 };
-
 
 int main(int argc, char const *argv[])
 {
@@ -65,35 +60,39 @@ int main(int argc, char const *argv[])
 	trie t;
 	int n, q;
 	cin >> n;
+	cout << n << endl;
 	while (n--) {
 		string word;
 		cin >> word;
 		t.insert(word);
 	}
-	t.uniquePrefixes(t.root, "");
-
-
-
+	cin >> q;
+	while (q--) {
+		string word;
+		cin >> word;
+		if (t.search(word)) {
+			cout << word << " found" << endl;
+		}
+		else {
+			cout << word << " not found" << endl;
+		}
+	}
 
 	return 0;
 }
 
 
+
 //input
-// 7
+// 6
 // abc
-// applicant
 // application
 // app
 // ape
 // mango
 // man
-
-
-//output
-// mang
-// ape
-// applicat
-// applican
-// ab
-
+// 4
+// web
+// app
+// applicant
+// mango

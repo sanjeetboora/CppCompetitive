@@ -1,8 +1,12 @@
-7
+6
 abc
-applicant
 application
 app
 ape
 mango
 man
+4
+web
+app
+applicant
+mango
