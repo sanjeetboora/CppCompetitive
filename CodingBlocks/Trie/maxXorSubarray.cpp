@@ -5,13 +5,13 @@ class node {
 public:
 	int data;
 	unordered_map<int, node*> children;
-	bool isTerminal;
+	int prefixXorValue;
 	node* left;
 	node* right;
 	node(int ch) {
 		data = ch;
-		isTerminal = false;
 		left = right = NULL;
+		prefixXorValue = 0;
 	}
 
 };
@@ -45,43 +45,33 @@ public:
 			}
 
 		}
-		temp->isTerminal = true;
+		temp->prefixXorValue = num;
 	}
 
-	int maxXorPair(int* arr, int n) {
-		int maxXor = 0;
-		for (int i = 0; i < n; ++i)
+	int xorQuery(int num) {
+		node* temp = root;
+		for (int m = 31; m >= 0 ; m--)
 		{
-			int currXor = 0;
-			node* temp = root;
-			int num = arr[i];
-			for (int m = 31; m >= 0 ; m--)
-			{
-				int currBit = (num >> m) & 1;
-				if (currBit) {
-					if (temp->left) {
-						currXor += pow(2, m);
-						temp = temp->left;
-					}
-					else {
-						temp = temp->right;
-					}
+			int currBit = (num >> m) & 1;
+			if (currBit) {
+				if (temp->left) {
+					temp = temp->left;
 				}
 				else {
-					if (temp->right) {
-						currXor += pow(2, m);
-						temp = temp->right;
-					}
-					else {
-						temp = temp->left;
-					}
+					temp = temp->right;
 				}
 			}
-			maxXor = max(maxXor, currXor);
+			else {
+				if (temp->right) {
+					temp = temp->right;
+				}
+				else {
+					temp = temp->left;
+				}
+			}
 		}
-		return maxXor;
+		return num xor temp->prefixXorValue;
 	}
-
 
 };
 
@@ -95,15 +85,19 @@ int main(int argc, char const *argv[])
 	freopen("output.txt", "w", stdout);
 #endif
 	trie t;
-	int n = 8;
-	int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7};
+
+	int n = 6;
+	int preXor = 0;
+	int maxSubarrayXor = INT_MIN;
+	int arr[10] = {8, 1, 2, 12, 7, 6};
+
 	for (int i = 0; i < n; ++i)
 	{
-		t.insert(arr[i]);
+		preXor = preXor xor arr[i];
+		t.insert(preXor);
+		maxSubarrayXor = max(maxSubarrayXor, t.xorQuery(preXor));
 	}
-	cout << t.maxXorPair(arr, n) << endl;
-
-
+	cout << maxSubarrayXor << endl;
 
 
 	return 0;
@@ -111,13 +105,16 @@ int main(int argc, char const *argv[])
 
 
 // input
-// {25, 10, 2, 8, 5, 3}
-
-// output
-// 28
-
-// input
-// {0,1, 2, 3, 4, 5, 6, 7}
-
+// {1, 2, 3, 4}
 // output
 // 7
+
+// input
+// {4, 6}
+// output
+// 6
+
+// input
+// {8, 1, 2, 12, 7, 6}
+// output
+// 15

@@ -39,7 +39,6 @@ public:
 		if (currNode == NULL) {
 			return;
 		}
-
 		if (currNode->visited  == 1) {
 			cout << prefix << endl;
 			return;
