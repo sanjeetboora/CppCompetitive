@@ -1,0 +1,8 @@
+flutter --> web, 
+Javascript --> web, 
+DSAlgo --> Javascript, django, web, 
+C++ --> DSAlgo, 
+python --> DSAlgo, 
+java --> DSAlgo, 
+student --> python, java, C++, Javascript, 
+flutter, student, python, java, C++, DSAlgo, Javascript, django, web, 
