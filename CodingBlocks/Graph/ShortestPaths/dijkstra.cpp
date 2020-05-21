@@ -18,33 +18,38 @@ public:
 		}
 	}
 
-	int dfsHelper(int src, unordered_map< int, pair<bool, int> > &visited, int &ans) {
+	void dijkstra(T src) {
+		set<pair<T, int> > disSet;
+		unordered_map<T, int>dist;
+		for (auto v : mp) {
+			dist[v.first] = INT_MAX;
+		}
+		dist[src] = 0;
+		disSet.insert(make_pair(dist[src], src));
+		while (!disSet.empty()) {
+			auto front = *(disSet.begin());
+			T node = front.second;
+			int nodeDis = front.first;
+			disSet.erase(disSet.begin());
 
-		visited[src] = make_pair(true, 1);
-
-		for (auto nbPair : mp[src]) {
-			int nbr = nbPair.first;
-			int wt = nbPair.second;
-			if (!visited[nbr].first) {
-				visited[src].second += dfsHelper(nbr, visited, ans);
-				int nodesNbr = visited[nbr].second;
-				int nodesLeft = V - nodesNbr;
-				ans += 2 * min(nodesNbr, nodesLeft) * wt;
+			for (auto nbr : mp[node]) {
+				if ((nbr.second + nodeDis) < dist[nbr.first]) {
+					auto fInSet = disSet.find(make_pair(dist[nbr.first], nbr.first));
+					if (fInSet != disSet.end()) {
+						disSet.erase(fInSet);
+					}
+					dist[nbr.first] = nbr.second + nodeDis;
+					disSet.insert(make_pair(dist[nbr.first], nbr.first));
+				}
 			}
 		}
-		return visited[src].second;
+
+		for (auto v : dist) {
+			cout << v.first << ", " << v.second << endl;
+		}
+
 	}
 
-	void dfs() {
-		unordered_map< int, pair<bool, int> > visited;
-		for (int i = 0; i < V; ++i)
-		{
-			visited[i] = make_pair(false, 0);
-		}
-		int ans = 0;
-		dfsHelper(0, visited, ans);
-		cout << ans << endl;
-	}
 
 	void printList() {
 		for (auto v : mp) {
@@ -82,12 +87,30 @@ int main(int argc, char const *argv[])
 		while (h--) {
 			int u, v, w;
 			cin >> u >> v >> w;
-			g.addEdge(u - 1, v - 1, w);
+			g.addEdge(u, v, w);
 
 		}
-		g.dfs();
+		g.dijkstra(0);
 		//g.printList();
 	}
 
 	return 0;
 }
+
+
+
+//input
+// 1
+// 5
+// 0 1 2
+// 1 2 2
+// 2 3 2
+// 0 3 8
+// 0 2 5
+
+
+//output
+// 0, 0
+// 1, 2
+// 2, 4
+// 3, 6
