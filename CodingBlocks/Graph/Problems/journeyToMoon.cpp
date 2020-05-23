@@ -34,7 +34,7 @@ public:
 		int pairsFromSameCountry = 0;
 		int totalPossiblePairs = (n * (n - 1)) / 2;
 		for (auto v : mp) {
-			int astronaut = 0; //count of vertices in a component
+			int astronaut = 0; //count of astronauts in a country
 			if (!visited.count(v.first)) {
 				//cout << countries << " --> ";
 				dfsHelper(v.first, visited, astronaut);
