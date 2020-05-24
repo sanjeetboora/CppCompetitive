@@ -1,0 +1,3 @@
+cycle exists3, 1
+cycle exists6, 4
+this is a cyclic graph
