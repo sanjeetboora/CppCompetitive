@@ -1,4 +1,1 @@
-0, 0
-1, 2
-2, 4
-3, 6
+negative cycle exists from 2 to 3
