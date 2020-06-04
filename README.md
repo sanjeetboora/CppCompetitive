@@ -51,6 +51,9 @@
 * [Two Sum](https://leetcode.com/problems/two-sum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/HashMap/TwoSum.cpp)
 
 
+### Dynamic Programming
+* [Unique Paths](https://leetcode.com/problems/unique-paths) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths2.cpp)
+
 
 
 
