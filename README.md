@@ -54,6 +54,9 @@
 ### Dynamic Programming
 * [Unique Paths](https://leetcode.com/problems/unique-paths) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths2.cpp)
 
+* [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum2.cpp)
+
+
 
 
 
