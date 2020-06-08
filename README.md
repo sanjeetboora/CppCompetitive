@@ -56,6 +56,13 @@
 
 * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum2.cpp)
 
+* [Edit Distance](https://leetcode.com/problems/edit-distance/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/EditDistance.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum2.cpp)
+
+
+### Greedy
+* [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Greedy/AdvantageShuffle.cpp)
+
+
 
 
 
