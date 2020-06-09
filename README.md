@@ -50,19 +50,24 @@
 ### HashMap
 * [Two Sum](https://leetcode.com/problems/two-sum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/HashMap/TwoSum.cpp)
 
+### Recursion
+* [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Recursion/DistinctSubsequences.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Recursion/DistinctSubsequences2.cpp)
+
 
 ### Dynamic Programming
 * [Unique Paths](https://leetcode.com/problems/unique-paths) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths2.cpp)
 
 * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum2.cpp)
 
-* [Edit Distance](https://leetcode.com/problems/edit-distance/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/EditDistance.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/MinimumPathSum2.cpp)
+* [Edit Distance](https://leetcode.com/problems/edit-distance/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/EditDistance.cpp)
+
+* [Decode Ways](https://leetcode.com/problems/decode-ways/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DecodeWays.cpp)
+
+* [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences3.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences4.cpp)
 
 
 ### Greedy
 * [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Greedy/AdvantageShuffle.cpp)
-
-
 
 
 
