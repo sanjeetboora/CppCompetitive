@@ -53,6 +53,8 @@
 ### Recursion
 * [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Recursion/DistinctSubsequences.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Recursion/DistinctSubsequences2.cpp)
 
+* [Triangle](https://leetcode.com/problems/triangle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Recursion/Triangle.cpp)
+
 
 ### Dynamic Programming
 * [Unique Paths](https://leetcode.com/problems/unique-paths) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/UniquePaths2.cpp)
@@ -64,6 +66,8 @@
 * [Decode Ways](https://leetcode.com/problems/decode-ways/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DecodeWays.cpp)
 
 * [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences3.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences4.cpp)
+
+* [Triangle](https://leetcode.com/problems/triangle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle1.cpp)
 
 
 ### Greedy
