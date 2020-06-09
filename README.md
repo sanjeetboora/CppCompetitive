@@ -67,7 +67,8 @@
 
 * [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences3.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/DistinctSubsequences4.cpp)
 
-* [Triangle](https://leetcode.com/problems/triangle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle1.cpp)
+* [Triangle](https://leetcode.com/problems/triangle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle1.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle2.cpp)
+
 
 
 ### Greedy
