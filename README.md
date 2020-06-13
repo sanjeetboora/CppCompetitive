@@ -69,10 +69,19 @@
 
 * [Triangle](https://leetcode.com/problems/triangle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle1.cpp) | [Solution2](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/Triangle2.cpp)
 
+* [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/DynamicProgramming/BestTimetoBuyandSellStock.cpp)
+
 
 
 ### Greedy
 * [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/Greedy/AdvantageShuffle.cpp)
+
+
+### Two Pointer
+
+* [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) -> [Solution](https://github.com/sanjeetboora/CppCompetitive/tree/master/Leetcode/TwoPointer/BestTimetoBuyandSellStock1.cpp)
+
+
 
 
 
