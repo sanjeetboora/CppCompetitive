@@ -21,7 +21,7 @@ public:
         if (pVal < rVal and qVal < rVal) { //left
             return lowestCommonAncestor(root->left, p, q);
         }
-        if (pVal > rVal and qVal > rVal) { //right
+        else if (pVal > rVal and qVal > rVal) { //right
             return lowestCommonAncestor(root->right, p, q);
         }
         else {
@@ -29,5 +29,30 @@ public:
         }
 
 
+    }
+};
+
+
+//Iterative
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        int pVal = p->val;
+        int qVal = q->val;
+        TreeNode* temp = root;
+
+        while (temp != NULL) {
+            int rVal = temp->val;
+            if (pVal < rVal and qVal < rVal) { //left
+                temp = temp->left;
+            }
+            else if (pVal > rVal and qVal > rVal) { //right
+                temp = temp->right;
+            }
+            else {
+                return temp;
+            }
+        }
+        return NULL;
     }
 };
