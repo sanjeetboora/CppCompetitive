@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/rotting-oranges/
 //https://leetcode.com/discuss/interview-question/411357/
+//https://leetcode.com/discuss/interview-question/347457
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
