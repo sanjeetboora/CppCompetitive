@@ -1,5 +1,7 @@
 //https://leetcode.com/problems/two-sum/
 //https://leetcode.com/discuss/interview-question/356960
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
+// https://leetcode.com/discuss/interview-question/372434
 class Solution {
 public:
   vector<int> twoSum(vector<int>& nums, int target) {
