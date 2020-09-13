@@ -1,16 +1,21 @@
+//https://leetcode.com/discuss/interview-question/356150
 //https://leetcode.com/discuss/interview-question/347457
 //https://leetcode.com/problems/rotting-oranges/
 //https://leetcode.com/discuss/interview-question/411357/
-
 #include <bits/stdc++.h>
 using  namespace  std;
 
 int treasureIsland(vector<vector<char> >& grid) {
 	queue<pair<int, int> > q;
 	vector<pair<int, int> > neighbours = {{1, 0,}, {0, 1,}, {0, -1,}, { -1, 0,}};
+	for (int i = 0; i < grid.size(); i++) {
+		for (int j = 0; j < grid[0].size(); j++) {
+			if (grid[i][j] == 'S') {
+				q.push(make_pair(i, j));
+			}
+		}
+	}
 
-	q.push(make_pair(0, 0));
-	grid[0][0] = 'D';
 	int count = 0;
 	while (!q.empty()) {
 		count++;
@@ -48,24 +53,14 @@ int treasureIsland(vector<vector<char> >& grid) {
 
 int main(int argc, char const * argv[])
 {
-	vector<vector<char> > grid = {{'O', 'O', 'O', 'O'},
-		{'D', 'O', 'D', 'O'},
-		{'O', 'O', 'O', 'O'},
-		{'X', 'D', 'D', 'O'}
+	vector<vector<char> > grid = { {'S', 'O', 'O', 'S', 'S'},
+		{'D', 'O', 'D', 'O', 'D'},
+		{'O', 'O', 'O', 'O', 'X'},
+		{'X', 'D', 'D', 'O', 'O'},
+		{'X', 'D', 'D', 'D', 'O'}
 	};
 	cout << treasureIsland(grid) << endl;
 
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
