@@ -1,6 +1,6 @@
-//DFS - connected components
+/* https://leetcode.com/problems/number-of-islands/ */
 
-
+/* DFS */
 class Solution {
 public:
 
@@ -41,6 +41,47 @@ public:
     }
 };
 
+
+
+/*  BFS  */
+
+class Solution {
+public:
+    int dir[4][2] = {{1, 0}, {0, 1}, { -1, 0}, {0, -1}};
+    int numIslands(vector<vector<char>>& grid) {
+        int islands = 0;
+        int rows = grid.size();
+        if (!rows) return islands;
+        int cols = grid[0].size();
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j] == '1') {
+
+                    islands++;
+                    grid[i][j] = '0';
+                    queue<pair<int, int> > q;
+                    q.push({i, j});
+
+                    while (!q.empty()) {
+                        pair<int, int> curr = q.front();
+                        q.pop();
+                        for (int x = 0; x < 4; x++) {
+                            int r = dir[x][0] + curr.first;
+                            int c = dir[x][1] + curr.second;
+
+                            if (r >= 0 and c >= 0 and r < rows and c < cols and grid[r][c] == '1') {
+                                grid[r][c] = '0';
+                                q.push({r, c});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return islands;
+    }
+};
 
 
 
