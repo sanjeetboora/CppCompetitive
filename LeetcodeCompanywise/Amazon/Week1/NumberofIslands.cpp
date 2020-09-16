@@ -19,7 +19,7 @@ public:
         return;
     }
 
-    int numIslands(vector<vector<char>>& grid) {
+    int numIslands(vector<vector<char> >& grid) {
         int islands = 0;
 
         int rows = grid.size();
