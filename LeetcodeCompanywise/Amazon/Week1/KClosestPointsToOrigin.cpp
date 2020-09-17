@@ -1,5 +1,6 @@
 /*  https://leetcode.com/problems/k-closest-points-to-origin/  */
 
+/* using heap O(NlogK)*/
 class Solution {
 public:
 
