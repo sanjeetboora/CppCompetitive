@@ -33,3 +33,35 @@ public:
         return maxRooms;
     }
 };
+
+
+
+
+/*  Using 1 min Heap and sorting actual array  |  Time: O(NlogN) | Space: O(N) */
+
+class Solution {
+public:
+    int minMeetingRooms(vector<vector<int>>& intervals) {
+        int maxRooms = 0;
+        int sz = intervals.size();
+        if (sz == 0) return maxRooms;
+
+        sort(intervals.begin(), intervals.end());
+        priority_queue<int, vector<int>, greater<int> >minEnd;
+
+        minEnd.push(intervals[0][1]);
+        maxRooms++;
+
+        for (int i = 1; i < sz; i++) {
+            int endTime = minEnd.top();
+            if (endTime <= intervals[i][0]) {
+                minEnd.pop();
+            }
+            minEnd.push(intervals[i][1]);
+            maxRooms = max(maxRooms, (int) minEnd.size());
+        }
+
+        return maxRooms;
+    }
+};
+
