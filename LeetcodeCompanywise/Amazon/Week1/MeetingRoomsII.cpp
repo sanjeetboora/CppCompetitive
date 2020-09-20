@@ -65,3 +65,48 @@ public:
     }
 };
 
+
+
+
+/************************************************************/
+
+
+class Solution {
+public:
+    unordered_map<int, vector<string> >mp;
+    unordered_set<string> wordset;
+    int maxlen = 0;
+    vector<string> wordBreak(string s, vector<string>& wordDict) {
+        for (string x : wordDict) {
+            wordset.insert(x);
+            maxlen = max(maxlen, (int)x.length());
+        }
+
+        vector<string> res = helper(s, 0);
+        return res;
+    }
+
+    vector<string> helper(string s, int st) {
+        if (mp.count(st) != 0) return mp[st];
+
+        vector<string> tmp;
+        for (int i = st; i < s.length() and i <= st + maxlen; i++) {
+            string x = s.substr(st, i - st + 1);
+            if (wordset.find(x) != wordset.end()) {
+                if (st + x.length() == s.length()) {
+                    tmp.push_back(x);
+                }
+                else {
+                    vector<string> subtmp = helper(s, i + 1);
+                    for (string y : subtmp) {
+                        tmp.push_back(x + " " + y);
+                    }
+                }
+            }
+        }
+        mp[st] = tmp;
+        return tmp;
+    }
+
+};
+
