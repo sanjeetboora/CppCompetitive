@@ -28,6 +28,7 @@ node* insert(node* root, int d) {
 	}
 	return root;
 }
+
 node* buildBST() {
 	node* root = NULL;
 	int d;
@@ -38,6 +39,7 @@ node* buildBST() {
 	}
 	return root;
 }
+
 void print(node* root) {
 	if (root == NULL) {
 		return;
@@ -155,7 +157,10 @@ bool isBST(node* root, int minimum, int maximum) {
 		return true;
 	}
 
-	if (root->data >= minimum and root->data < maximum and isBST(root->left, minimum, root->data) and isBST(root->right, root->data, maximum)) {
+	if (root->data >= minimum and root->data < maximum
+	        and isBST(root->left, minimum, root->data)
+	        and isBST(root->right, root->data, maximum)) {
+
 		return true;
 	}
 	return false;
@@ -277,8 +282,8 @@ nodeHelper largestBSTinBT(node*root) {
 	nodeHelper sol;
 	if (leftTree.maximum <= root->data and rightTree.minimum > root->data and leftTree.isBST and rightTree.isBST) {
 		sol.isBST = true;
-		sol.maximum = max(rightTree.maximum,root->data);
-		sol.minimum = min(leftTree.minimum,root->data);
+		sol.maximum = max(rightTree.maximum, root->data);
+		sol.minimum = min(leftTree.minimum, root->data);
 		sol.size = leftTree.size + rightTree.size + 1;
 	}
 	else {
