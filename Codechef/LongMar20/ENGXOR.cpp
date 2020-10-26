@@ -1,4 +1,5 @@
-
+/* Problem -  */
+/* By Sanjeet Boora */
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -19,8 +20,8 @@ int main()
             scanf("%d", &P);
             bool eq = (__builtin_popcount (P ^ Ai) % 2) == (Anbits % 2);
             int result = eq ? num : N - num;
-            printf("%d %d\n",N - result,result);
-            
+            printf("%d %d\n", N - result, result);
+
         }
 
     }

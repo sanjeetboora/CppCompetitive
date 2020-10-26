@@ -1,4 +1,6 @@
-//https://leetcode.com/problems/search-a-2d-matrix/
+/* Problem - https://leetcode.com/problems/search-a-2d-matrix/ */
+/* By Sanjeet Boora */
+
 class Solution {
 public:
 	bool binarySearchCol(vector<vector<int>>& matrix, int row, int target) {

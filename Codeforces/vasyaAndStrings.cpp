@@ -1,4 +1,6 @@
-//https://codeforces.com/problemset/problem/676/C
+/* Problem - https://codeforces.com/problemset/problem/676/C */
+/* By Sanjeet Boora */
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(int argc, char const *argv[])
@@ -16,16 +18,16 @@ int main(int argc, char const *argv[])
 	{
 		count[str[i] - 'a']++;
 
-		if(min(count[0],count[1])>k){
+		if (min(count[0], count[1]) > k) {
 			count[str[left] - 'a']--;
 			left++;
 		}
-		else{
+		else {
 			result++;
 		}
 
 	}
-	cout<<result<<endl;
+	cout << result << endl;
 
 
 	return 0;

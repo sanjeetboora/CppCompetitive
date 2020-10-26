@@ -1,3 +1,6 @@
+/* Problem -  */
+/* By Sanjeet Boora */
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -41,15 +44,15 @@ void minsum_opr(long long int N, long long int D, long long int opr, int calls, 
 		countMap.erase(curr_N);
 	}
 	else {
-		if ((countMap.find(curr_N)->second) > (opr+curr_opr)) {
-			countMap.find(curr_N)->second = opr+curr_opr;
+		if ((countMap.find(curr_N)->second) > (opr + curr_opr)) {
+			countMap.find(curr_N)->second = opr + curr_opr;
 		}
 		if (curr_N <= arr[0]) {
 			if (curr_N == arr[0]) {
 				arr[1] = arr[1] < (opr) ? arr[1] : (opr);
 			}
 			else {
-				arr[0]=curr_N;
+				arr[0] = curr_N;
 				arr[1] = opr;
 
 			}
@@ -69,7 +72,7 @@ int main(int argc, char const *argv[])
 		countMap.clear();
 		cin >> N >> D;
 		minsum_opr(N, D, 0, 0, arr);
-		map <long long int, long long int> :: iterator it; 
+		map <long long int, long long int> :: iterator it;
 		long long int min = INT_MAX, minc = INT_MAX;
 		cout << arr[0] << " " << arr[1] << endl;
 	}

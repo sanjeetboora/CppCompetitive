@@ -1,4 +1,6 @@
-#include<iostream>
+/* Problem -  */
+/* By Sanjeet Boora */
+#include<bits/stdc++.h>
 using namespace std;
 
 #define inf 1000000000

@@ -1,3 +1,6 @@
+/* Problem -  */
+/* By Sanjeet Boora */
+
 #include<bits/stdc++.h>
 #define ll long long int
 using namespace std;
@@ -27,7 +30,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < N ; i++)
 	{
-		for (int j = i+1; j < N; j++)
+		for (int j = i + 1; j < N; j++)
 		{	if (i == j) {
 				continue;
 			}
@@ -42,26 +45,26 @@ int main(int argc, char const *argv[])
 				max = min;
 			}
 			else { // non- concentric
-                if (dist > (r1 + r2)) // circles don't overlap or intersect
-                {
-                    min = dist - r1 - r2;
-                    max = dist + r1 + r2;
-                }
-                else if (dist < bigRad - smallRad) // smaller  is properly inside bigger circle
-                {
-                    min = bigRad - dist - smallRad;
-                    max = bigRad + dist + smallRad;
-                }
-                else if (dist == (r1 + r2))
-                {
-                    min = 0;
-                    max = (2 * r1 + 2 * r2);
-                }
-                else
-                {
-                    min = 0;
-                    max = (dist + r1 + r2);
-                }
+				if (dist > (r1 + r2)) // circles don't overlap or intersect
+				{
+					min = dist - r1 - r2;
+					max = dist + r1 + r2;
+				}
+				else if (dist < bigRad - smallRad) // smaller  is properly inside bigger circle
+				{
+					min = bigRad - dist - smallRad;
+					max = bigRad + dist + smallRad;
+				}
+				else if (dist == (r1 + r2))
+				{
+					min = 0;
+					max = (2 * r1 + 2 * r2);
+				}
+				else
+				{
+					min = 0;
+					max = (dist + r1 + r2);
+				}
 			}
 			int minval = ceil(min);
 			int maxval = floor(max);
@@ -72,13 +75,13 @@ int main(int argc, char const *argv[])
 	}
 	for (int i = 1; i < 1000006; i++) {
 		disarr[i] = disarr[i] + disarr[i - 1];
-        //cout<<i<<" -> "<<disarr[i]<<endl;
+		//cout<<i<<" -> "<<disarr[i]<<endl;
 	}
 	for (int i = 0; i < Q; i++)
 	{
 		ll K;
 		cin >> K;
-		ll count = disarr[K];	
+		ll count = disarr[K];
 		cout << count << endl;
 	}
 	return 0;

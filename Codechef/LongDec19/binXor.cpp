@@ -1,4 +1,5 @@
-
+/* Problem -  */
+/* By Sanjeet Boora */
 #include <stdio.h>
 
 #define MODULO 1000000007
@@ -50,70 +51,70 @@ void compute()
 long comb(long one, long two)
 {
 	return (fact[one] *
-			modinv((fact[two] * fact[one - two]) % MODULO)) % MODULO;
+	        modinv((fact[two] * fact[one - two]) % MODULO)) % MODULO;
 }
 
-void calc(){
+void calc() {
 	int num;
-    long long int result;
+	long long int result;
 	char ch;
 	long long int i, j;
-    long long int minimum1, maximum1;
-	
+	long long int minimum1, maximum1;
+
 	long long int a, b;
-	
+
 	scanf("%d", &num);
 
+	scanf("%c", &ch);
+
+	a = b = 0;
+
+	for (i = 0; i < num; i++)
+	{
 		scanf("%c", &ch);
-
-		a = b = 0;
-
-		for (i = 0; i < num; i++)
+		if (ch == '1')
 		{
-			scanf("%c", &ch);
-			if (ch == '1')
-			{
-				a++;
-			}
+			a++;
 		}
+	}
 
+	scanf("%c", &ch);
+
+	for (i = 0; i < num; i++)
+	{
 		scanf("%c", &ch);
-
-		for (i = 0; i < num; i++)
+		if (ch == '1')
 		{
-			scanf("%c", &ch);
-			if (ch == '1')
-			{
-				b++;
-			}
+			b++;
 		}
+	}
 
-		if (b > a)
-		{
-			maximum1 = a; 
-			a = b;
-			b = maximum1;
-		}
+	if (b > a)
+	{
+		maximum1 = a;
+		a = b;
+		b = maximum1;
+	}
 
-		minimum1 = a - b;
+	minimum1 = a - b;
 
-		if ((a + b) > num)
-		{
-			maximum1 = (2 * num) - (a + b);
-		}
-		else
-		{
-			maximum1 = a + b;
-		}
+	if ((a + b) > num)
+	{
+		maximum1 = (2 * num) - (a + b);
+	}
+	else
+	{
+		maximum1 = a + b;
+	}
 
-		result = 0;
+	result = 0;
 
-		for (i = minimum1; i <= maximum1; i += 2)
-		{
-			result = (result + comb(num, i)) % MODULO;
-		}
+	for (i = minimum1; i <= maximum1; i += 2)
+	{
+		result = (result + comb(num, i)) % MODULO;
+	}
 
-		printf("%lld\n", result);
+	printf("%lld\n", result);
 }
 
 int main()
@@ -121,7 +122,7 @@ int main()
 	start();
 
 	int t;
-	
+
 	scanf("%d", &t);
 	while (t--)
 	{

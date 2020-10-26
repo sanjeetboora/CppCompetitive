@@ -1,4 +1,5 @@
-// //https://www.geeksforgeeks.org/find-the-element-that-appears-once-in-a-sorted-array/
+/* Problem - https://www.geeksforgeeks.org/find-the-element-that-appears-once-in-a-sorted-array/ */
+/* By Sanjeet Boora */
 
 // #include <bits/stdc++.h>
 // using namespace std;

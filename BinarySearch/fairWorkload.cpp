@@ -1,6 +1,6 @@
+/* Problem - https://community.topcoder.com/stat?c=problem_statement&pm=1901&rd=4650 */
 //https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/
-
-//https://community.topcoder.com/stat?c=problem_statement&pm=1901&rd=4650
+/* By Sanjeet Boora */
 
 #include <bits/stdc++.h>
 using namespace std;

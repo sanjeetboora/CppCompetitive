@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/kth-largest-element-in-an-array
+/* Problem - https://leetcode.com/problems/kth-largest-element-in-an-array */
+/* By Sanjeet Boora */
 
 class Solution {
 public:

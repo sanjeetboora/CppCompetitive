@@ -1,4 +1,6 @@
-//https://codeforces.com/problemset/problem/1282/B2
+/* Problem - https://codeforces.com/problemset/problem/1282/B2 */
+/* By Sanjeet Boora */
+
 
 #include <bits/stdc++.h>
 using namespace  std;

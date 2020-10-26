@@ -1,18 +1,20 @@
+/* Problem - https://community.topcoder.com/stat?c=problem_statement&pm=3561&rd=6519 */
+/* By Sanjeet Boora */
 #include<bits/stdc++.h>
 #include<vector>
 using namespace std;
 class SortEstimate {
 public:
     double howMany(int c, int time) {
-        double low = 1, high = time, mid,ans=0, cValue = c;
-        while(high / low > 1 + 1e-12){
-            mid = low+(high-low)/2;
-            if( mid * log2(mid) <= time/cValue){
+        double low = 1, high = time, mid, ans = 0, cValue = c;
+        while (high / low > 1 + 1e-12) {
+            mid = low + (high - low) / 2;
+            if ( mid * log2(mid) <= time / cValue) {
                 ans = mid;
-                low=mid+ 1e-12;
-            } 
-            else{
-                high=mid;
+                low = mid + 1e-12;
+            }
+            else {
+                high = mid;
             }
         }
         return ans;

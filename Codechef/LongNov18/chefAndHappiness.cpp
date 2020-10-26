@@ -1,3 +1,6 @@
+/* Problem -  */
+/* By Sanjeet Boora */
+
 #include <bits/stdc++.h>
 #define ll long long int
 using namespace std;
@@ -5,7 +8,7 @@ int check(int* arr, pair<int, vector<int> >*freq, int size) {
 	for (int i = 1; i <= size; i++) {
 		if (freq[i].first > 1) {
 			for (int k = 0; k != freq[i].second.size(); k++) {
-				for (int j = freq[i].second.size()-1; j > k; j--) {
+				for (int j = freq[i].second.size() - 1; j > k; j--) {
 					if (j != k) {
 						int a = freq[i].second[k], b = freq[i].second[j];
 						if (freq[a].first > 0 && freq[b].first > 0) {
